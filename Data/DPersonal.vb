@@ -15,7 +15,7 @@ Public Class DPersonal
         End If
 
         Dim query As String = $"SELECT * FROM {tabla} {condicion}  LIMIT {pageSize} OFFSET {offset};"
-        MessageBox.Show(query)
+
         Dim adapter As MySqlDataAdapter
         Dim dataSet As New DataSet
         Try
